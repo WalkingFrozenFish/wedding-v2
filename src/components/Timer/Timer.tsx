@@ -18,6 +18,7 @@ function Timer() {
     };
 
     const countdownTimer = () => {
+        // @ts-ignore
         const diff = deadline - new Date();
         if (diff <= 0) {
             clearInterval(timerId);
