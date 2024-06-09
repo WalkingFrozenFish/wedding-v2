@@ -3,7 +3,7 @@
     max-width: 1500px;
     background-image: url("../../assets/flowersBgLeft.svg"), url("../../assets/flowersBgRight.svg");
     background-repeat: repeat-y;
-    background-size: contain;
+    /*background-size: contain;*/
     background-position: left, right;
     /*box-shadow: inset 0px 0px 20px 50px white;*/
 }

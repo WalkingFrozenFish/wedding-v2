@@ -1,0 +1,128 @@
+.form {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.formWrapper {
+    background-color: #fff;
+    box-shadow: 0px 0px 60px 60px white;
+}
+
+.formItem {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formItemTitle {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.formItemInput {
+    width: 100%;
+    font-size: 22px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.formItemTextArea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formItemCount {
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.counterButton {
+    padding: 5px;
+    font-size: 22px;
+    width: 42px;
+    margin: 10px;
+    cursor: pointer;
+
+    color: #B6B4CA;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 3px solid #B6B4CA;
+    transition: 0.3s;
+}
+
+.error {
+    color: salmon;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.sendButton {
+    padding: 5px;
+    width: 300px;
+    font-size: 22px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    color: #B6B4CA;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 3px solid #B6B4CA;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #B6B4CA;
+    color: #4C4C4C;
+    transition: 0.3s;
+}
+
+.statusText {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 60px 60px white;
+}
+
+.hideForm {
+    display: none;
+}
+
+@media screen and (min-width: 320px) {
+    .formItemTitle, .formItemInput, .formItemTextArea, .formItemCount {
+        /*width: 70%;width*/
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .formItemTitle, .formItemInput, .formItemTextArea, .formItemCount {
+        /*width: 80%;*/
+        font-size: 2em;
+    }
+}

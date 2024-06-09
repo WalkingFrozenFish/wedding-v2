@@ -5,6 +5,7 @@ import Shedule from "./components/Shedule/Shedule.tsx";
 import Flower from "./components/Flower/Flower.tsx";
 import Address from "./components/Address/Address.tsx";
 import Timer from "./components/Timer/Timer.tsx";
+import Form from "./components/Form/Form.tsx";
 
 function App() {
     return (
@@ -25,6 +26,10 @@ function App() {
 
             <Flower>
                 <Address />
+            </Flower>
+
+            <Flower>
+                <Form />
             </Flower>
         </div>
     );
