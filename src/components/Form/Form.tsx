@@ -35,7 +35,7 @@ function Form() {
         setGuestData(prevState => {
             return {
                 ...prevState,
-                guestsCount: prevState.guestsCount++
+                guestsCount: +prevState.guestsCount + 1
             }
         })
     }
