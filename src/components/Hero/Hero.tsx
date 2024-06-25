@@ -6,10 +6,10 @@ function Hero() {
         <div className={styles.heroContainer}>
             <img className={styles.heroBg} src={heroBg} alt="Background"/>
 
-            <h2 className={styles.names}>Нұрберген & Анель</h2>
+            <h2 className={styles.names}>Дархан-Марзия</h2>
 
             <div className={styles.date}>
-                <p>13.07.2024</p>
+                <p>11.08.2024</p>
             </div>
         </div>
     );

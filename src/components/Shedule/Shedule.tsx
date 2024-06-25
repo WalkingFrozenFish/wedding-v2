@@ -5,13 +5,13 @@ function Shedule() {
         <div className={styles.sheduleContainer}>
             <div className={styles.sheduleWrapper}>
                 <p>
-                    Той иелері <br/>
-                    Бауыржан & Ботагөз
+                    Той иелері: <br/>
+                    <strong style={{color: "white"}}>“Қабаш”</strong>-Сәлима
                 </p>
 
                 <p>
                     Той күні<br/>
-                    13 шілде
+                    11 Тамыз
                 </p>
 
                 <p>
