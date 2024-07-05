@@ -12,7 +12,7 @@
     left: 50%;
     width: 90%;
     height: calc(100% - 60px);
-    border: 6px solid #B6B4CA;
+    border: 6px solid #13552f;
     transform: translate(-50%, 0%);
 }
 
@@ -30,7 +30,7 @@
 .date {
     padding: 19px 79px;
     font-size: 52px;
-    background-color: #B6B4CA;
+    background-color: #13552f;
     width: fit-content;
 
     position: absolute;

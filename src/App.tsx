@@ -6,31 +6,49 @@ import Flower from "./components/Flower/Flower.tsx";
 import Address from "./components/Address/Address.tsx";
 import Timer from "./components/Timer/Timer.tsx";
 import Form from "./components/Form/Form.tsx";
+import Wrapper from "./components/Wrapper/Wrapper.tsx";
 
 function App() {
     return (
         <div className={styles.container}>
-            <Hero/>
 
-            <Flower>
+            <Wrapper>
+                <Hero/>
+            </Wrapper>
+
+            
+
+            {/* <Flower> */}
+                
+            {/* </Flower> */}
+
+            <Wrapper>
                 <Text />
-            </Flower>
+            </Wrapper>
 
-            <Flower>
+            {/* <Flower> */}
+            <Wrapper>
                 <Shedule />
-            </Flower>
+            </Wrapper>
+            {/* </Flower> */}
 
-            <Flower>
+            {/* <Flower> */}
+            <Wrapper>
                 <Timer />
-            </Flower>
+            </Wrapper>
+            {/* </Flower> */}
 
-            <Flower>
+            {/* <Flower> */}
+            <Wrapper>
                 <Address />
-            </Flower>
+            </Wrapper>
+            {/* </Flower> */}
 
-            <Flower>
+            {/* <Flower> */}
+            <Wrapper>
                 <Form />
-            </Flower>
+            </Wrapper>
+            {/* </Flower> */}
         </div>
     );
 }

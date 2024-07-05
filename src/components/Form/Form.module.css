@@ -9,8 +9,8 @@
 }
 
 .formWrapper {
-    background-color: #fff;
-    box-shadow: 0px 0px 60px 60px white;
+    /* background-color: #fff;
+    box-shadow: 0px 0px 60px 60px white; */
 }
 
 .formItem {
@@ -58,10 +58,10 @@
     margin: 10px;
     cursor: pointer;
 
-    color: #B6B4CA;
+    color: #13552f;
     background-color: transparent;
     border-radius: 3px;
-    border: 3px solid #B6B4CA;
+    border: 3px solid #13552f;
     transition: 0.3s;
 }
 
@@ -87,15 +87,15 @@ input[type=number] {
     margin: 0 auto;
     display: block;
     cursor: pointer;
-    color: #B6B4CA;
+    color: #13552f;
     background-color: transparent;
     border-radius: 3px;
-    border: 3px solid #B6B4CA;
+    border: 3px solid #13552f;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: #B6B4CA;
+    background-color: #13552e58;
     color: #4C4C4C;
     transition: 0.3s;
 }

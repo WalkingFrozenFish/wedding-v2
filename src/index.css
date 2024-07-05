@@ -6,3 +6,11 @@
   font-style: normal;
   color: #4C4C4C;
 }
+
+body {
+  background-image: url("./assets/wedding-bg.png");
+  background-position: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
