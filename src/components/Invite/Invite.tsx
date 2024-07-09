@@ -9,7 +9,7 @@ const Invite = () => {
         <Title text={["Құрметті", "қонақтар!"]} />
 
         <div className={styles.textBlock}>
-          <p className={styles.text}>Сіз(дер)ді балаларымыз</p>
+          <p className={styles.text}>Сіздерді балаларымыз</p>
 
           <p className={styles.left}>Дархан</p>
           <p className={styles.text}>МЕН</p>
