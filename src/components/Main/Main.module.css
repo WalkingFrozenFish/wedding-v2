@@ -1,0 +1,42 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainTitle {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.date {
+    margin-top: 20px;
+    font-size: 22px;
+    display: block;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.date:before {
+    height: 1px;
+    width: 60px;
+    display: block;
+    content: "";
+    background-color: black;
+    margin-right: 10px;
+}
+
+.date:after {
+    height: 1px;
+    width: 60px;
+    display: block;
+    content: "";
+    background-color: black;
+    margin-left: 10px;
+}

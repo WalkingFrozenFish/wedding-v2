@@ -1,0 +1,43 @@
+.mapContainer {
+    padding: 20px;
+}
+
+.textBlock {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.place {
+    font-size: 35px;
+    color: #13552f;
+    font-style: italic;
+}
+
+.bottomTextblock {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.gisButton {
+    background-color: #13552f;
+    color: white;
+    padding: 10px 30px;
+    width: 60%;
+    display: block;
+    margin: 30px auto 0;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px #13552f;
+    text-align: center;
+    text-decoration: none;
+}

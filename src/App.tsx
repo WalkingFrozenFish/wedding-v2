@@ -1,39 +1,54 @@
-import Hero from "./components/Hero/Hero.tsx";
 import styles from "./App.module.css"
-import Text from "./components/Text/Text.tsx";
-import Shedule from "./components/Shedule/Shedule.tsx";
-import Address from "./components/Address/Address.tsx";
 import Timer from "./components/Timer/Timer.tsx";
 import Form from "./components/Form/Form.tsx";
-import Wrapper from "./components/Wrapper/Wrapper.tsx";
+import Divider from "./components/Divider/Divider.tsx";
+import Main from "./components/Main/Main.tsx";
+import Invite from "./components/Invite/Invite.tsx";
+import Road from "./components/Road/Road.tsx";
+import DressCode from "./components/Dresscode/DressCode.tsx";
+import Footer from "./components/Footer/Footer.tsx";
+import Calendar from "./components/Calendar/Calendar.tsx";
+import Map from "./components/Map/Map.tsx";
+import Chat from "./components/Chat/Chat.tsx";
 
 function App() {
     return (
         <div className={styles.container}>
+            <Main/>
 
-            <Wrapper>
-                <Hero/>
-            </Wrapper>
+            <Divider/>
 
-            <Wrapper>
-                <Text />
-            </Wrapper>
+            <Invite/>
 
-            <Wrapper>
-                <Shedule />
-            </Wrapper>
+            <Divider/>
 
-            <Wrapper>
-                <Timer />
-            </Wrapper>
+            <Calendar/>
 
-            <Wrapper>
-                <Address />
-            </Wrapper>
+            <Divider/>
 
-            <Wrapper>
-                <Form />
-            </Wrapper>
+            <Timer/>
+
+            <Divider/>
+
+            <Map/>
+
+            <Divider/>
+
+            <Road/>
+
+            <Divider/>
+
+            <DressCode/>
+
+            <Divider/>
+
+            <Form/>
+
+            <Divider/>
+
+            <Chat/>
+
+            <Footer/>
         </div>
     );
 }

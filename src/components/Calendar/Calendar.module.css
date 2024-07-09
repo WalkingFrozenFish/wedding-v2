@@ -1,0 +1,8 @@
+.dayTitle {
+    display: flex;
+}
+
+.dayTitle p {
+    padding: 5px;
+    border: 1px solid black;
+}

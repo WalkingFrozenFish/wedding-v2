@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: black;
+}
+
+.text {
+    color: #888;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.text:hover {
+    color: #ccc;
+}

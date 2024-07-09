@@ -1,0 +1,41 @@
+.titleContainer {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.title:only-child {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title> *:nth-child(1) {
+    align-self: flex-start;
+}
+
+.title> *:nth-child(3)  {
+    align-self: flex-end;
+}
+
+.title:before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: black;
+    display: block;
+    left: -25px;
+    top: -10px;
+    position: absolute;
+}
+
+.title:after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: black;
+    display: block;
+    right: -25px;
+    bottom: -10px;
+    position: absolute;
+}

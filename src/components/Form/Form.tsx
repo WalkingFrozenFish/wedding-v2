@@ -1,6 +1,7 @@
 import styles from "./Form.module.css"
 import {ChangeEvent, useState} from "react";
 import axios from "axios";
+import Wrapper from "../Wrapper/Wrapper";
 
 interface IGuestData {
     name: string,
@@ -72,60 +73,63 @@ function Form() {
     }
 
 
-
     return (
-        <div className={styles.form}>
-            <div className={[styles.formWrapper, hideForm ? styles.hideForm : ""].join(" ")}>
+        <Wrapper>
 
-                <div className={styles.formItem}>
-                    <p className={styles.formItemTitle}>Аты-жөніңізді жазыңыз</p>
-                    <input className={styles.formItemInput} type="text" name="name" onChange={changeDataHandler}
-                           value={guestData.name}/>
-                    {
-                        validateInput ?
-                            <p>Пожалуйста, заполните все обязательные поля</p> : null
-                    }
-                </div>
+            <div className={styles.form}>
+                <div className={[styles.formWrapper, hideForm ? styles.hideForm : ""].join(" ")}>
 
-                <div className={styles.formItem}>
-                    <p className={styles.formItemTitle}>Тойға келесіз бе?</p>
-                    <input className={styles.formItemInput} type="text" name="incoming" onChange={changeDataHandler}
-                           value={guestData.incoming}/>
-                    {
-                        validateInput ?
-                            <p>Пожалуйста, заполните все обязательные поля</p> : null
-                    }
-                </div>
-
-                <div className={styles.formItem}>
-                    <p className={styles.formItemTitle}>Ізгі тілек білдірсеңіз</p>
-                    <textarea className={styles.formItemTextArea} name="message" onChange={changeDataHandler}
-                              value={guestData.message}></textarea>
-                </div>
-
-                <div className={styles.formItem}>
-                    <p className={styles.formItemTitle}>Қанша адам келесіздер?</p>
-                    <div className={styles.counter}>
-                        <button
-                            className={styles.counterButton} onClick={decrementGuestssCount}>-
-                        </button>
-                        <input className={styles.formItemCount} type="number" name="guestsCount"
-                               onChange={changeDataHandler} value={guestData.guestsCount}/>
-                        <button
-                            className={styles.counterButton}
-                            onClick={incrementGuestsCount}>+
-                        </button>
+                    <div className={styles.formItem}>
+                        <p className={styles.formItemTitle}>Аты-жөніңізді жазыңыз</p>
+                        <input className={styles.formItemInput} type="text" name="name" onChange={changeDataHandler}
+                               value={guestData.name}/>
+                        {
+                            validateInput ?
+                                <p>Пожалуйста, заполните все обязательные поля</p> : null
+                        }
                     </div>
+
+                    <div className={styles.formItem}>
+                        <p className={styles.formItemTitle}>Тойға келесіз бе?</p>
+                        <input className={styles.formItemInput} type="text" name="incoming" onChange={changeDataHandler}
+                               value={guestData.incoming}/>
+                        {
+                            validateInput ?
+                                <p>Пожалуйста, заполните все обязательные поля</p> : null
+                        }
+                    </div>
+
+                    <div className={styles.formItem}>
+                        <p className={styles.formItemTitle}>Ізгі тілек білдірсеңіз</p>
+                        <textarea className={styles.formItemTextArea} name="message" onChange={changeDataHandler}
+                                  value={guestData.message}></textarea>
+                    </div>
+
+                    <div className={styles.formItem}>
+                        <p className={styles.formItemTitle}>Қанша адам келесіздер?</p>
+                        <div className={styles.counter}>
+                            <button
+                                className={styles.counterButton} onClick={decrementGuestssCount}>-
+                            </button>
+                            <input className={styles.formItemCount} type="number" name="guestsCount"
+                                   onChange={changeDataHandler} value={guestData.guestsCount}/>
+                            <button
+                                className={styles.counterButton}
+                                onClick={incrementGuestsCount}>+
+                            </button>
+                        </div>
+                    </div>
+
+                    <button className={styles.sendButton} onClick={sendDataHandler}>Жіберу</button>
+
                 </div>
-
-                <button className={styles.sendButton} onClick={sendDataHandler}>Жіберу</button>
-
-            </div>
 
 
                 <p className={[hideForm ? styles.statusText : ""].join(" ")}>{responseMessage}</p>
 
-        </div>
+            </div>
+        </Wrapper>
+
     );
 }
 

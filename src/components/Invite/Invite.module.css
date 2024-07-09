@@ -1,0 +1,45 @@
+.inviteContainer {
+    padding: 20px;
+}
+
+.textBlock {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.left, .right {
+    font-style: italic;
+    font-size: 40px;
+    color: #005901;
+}
+
+.center {
+    text-align: center;
+    font-size: 18px;
+}
+
+.right {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bottomText {
+    margin-top: 100px;
+}
+
+.name {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    color: #005901;
+}
+
+.name strong {
+    font-style: italic;
+}

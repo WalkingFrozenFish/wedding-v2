@@ -1,0 +1,67 @@
+.roadContainer {
+    padding: 20px;
+}
+
+.roadmapItems {
+    margin-top: 40px;
+}
+
+.roadItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roadItem:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.roadItemIcon {
+    width: 70px;
+}
+
+.marker {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.marker:before {
+    content: "";
+    display: block;
+    height: 90px;
+    width: 1px;
+    left: 5px;
+    top: 10px;
+    /* transform: translate(50%); */
+    position: absolute;
+    background-color: black;
+}
+
+.roadItem:last-of-type .marker:before {
+    background-color: transparent;
+}
+
+.block {
+    width: 33%;
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+.time {
+    font-size: 30px;
+    color: #005901;
+    font-style: italic;
+}
+
+.description {
+    font-size: 16px;
+}

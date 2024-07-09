@@ -1,3 +1,4 @@
+import Wrapper from "../Wrapper/Wrapper";
 import styles from "./Timer.module.css"
 import {useEffect, useState} from "react";
 
@@ -42,33 +43,36 @@ function Timer() {
     }, []);
 
     return (
-        <div className={styles.timerWrapper}>
-            <p className={styles.title}>Үйлену тойына дейін қалды</p>
+        <Wrapper>
+            <div className={styles.timerWrapper}>
+                <p className={styles.title}>Той салтанатына
+                    дейін:</p>
 
-            <div className={styles.items}>
+                <div className={styles.items}>
 
-                <div className={styles.item}>
-                    <p>{timeRemaining.days < 10 ? '0' + timeRemaining.days : timeRemaining.days}</p>
-                    <p>{declensionNum(timeRemaining.days, ['Күн', 'Күн', 'Күн'])}</p>
+                    <div className={styles.item}>
+                        <p>{timeRemaining.days < 10 ? '0' + timeRemaining.days : timeRemaining.days}</p>
+                        <p>{declensionNum(timeRemaining.days, ['Күн', 'Күн', 'Күн'])}</p>
+                    </div>
+
+                    <div className={styles.item}>
+                        <p>{timeRemaining.hours < 10 ? '0' + timeRemaining.hours : timeRemaining.hours}</p>
+                        <p>{declensionNum(timeRemaining.hours, ['Сағат', 'Сағат', 'Сағат'])}</p>
+                    </div>
+
+                    <div className={styles.item}>
+                        <p>{timeRemaining.minutes < 10 ? '0' + timeRemaining.minutes : timeRemaining.minutes}</p>
+                        <p>{declensionNum(timeRemaining.minutes, ['Минут', 'Минут', 'Минут'])}</p>
+                    </div>
+
+                    <div className={styles.item}>
+                        <p>{timeRemaining.seconds < 10 ? '0' + timeRemaining.seconds : timeRemaining.seconds}</p>
+                        <p>{declensionNum(timeRemaining.seconds, ['Секунд', 'Секунд', 'Секунд'])}</p>
+                    </div>
                 </div>
 
-                <div className={styles.item}>
-                    <p>{timeRemaining.hours < 10 ? '0' + timeRemaining.hours : timeRemaining.hours}</p>
-                    <p>{declensionNum(timeRemaining.hours, ['Сағат', 'Сағат', 'Сағат'])}</p>
-                </div>
-
-                <div className={styles.item}>
-                    <p>{timeRemaining.minutes < 10 ? '0' + timeRemaining.minutes : timeRemaining.minutes}</p>
-                    <p>{declensionNum(timeRemaining.minutes, ['Минут', 'Минут', 'Минут'])}</p>
-                </div>
-
-                <div className={styles.item}>
-                    <p>{timeRemaining.seconds < 10 ? '0' + timeRemaining.seconds : timeRemaining.seconds}</p>
-                    <p>{declensionNum(timeRemaining.seconds, ['Секунд', 'Секунд', 'Секунд'])}</p>
-                </div>
             </div>
-
-        </div>
+        </Wrapper>
     );
 }
 
