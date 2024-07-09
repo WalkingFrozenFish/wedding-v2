@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const Title = ({ text }: IProps) => {
-    const [textData, setTextData] = useState<string[]>(text)
+    const [textData] = useState<string[]>(text)
 
     return (
         <div className={styles.titleContainer}>

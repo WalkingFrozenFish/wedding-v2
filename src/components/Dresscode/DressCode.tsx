@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./Dresscode.module.css"
 
 import male from "../../assets/dressCodeIcons/male.png"

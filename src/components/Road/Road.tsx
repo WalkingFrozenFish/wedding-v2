@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Title from '../Title/Title'
 import styles from "./Road.module.css"
 
@@ -11,7 +11,7 @@ import groupDance from "../../assets/roadmapIcons/groupDance.png"
 import Wrapper from '../Wrapper/Wrapper'
 
 const Road = () => {
-    const [roadData, setRoadData] = useState([
+    const [roadData] = useState([
         {
             textData: {
                 time: "17:00",
