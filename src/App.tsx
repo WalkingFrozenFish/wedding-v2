@@ -30,10 +30,6 @@ function App() {
 
             <Divider/>
 
-            <Map/>
-
-            <Divider/>
-
             <Road/>
 
             <Divider/>
@@ -43,10 +39,6 @@ function App() {
             <Divider/>
 
             <Form/>
-
-            <Divider/>
-
-            <Chat/>
 
             <Footer/>
         </div>
