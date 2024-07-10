@@ -13,7 +13,7 @@ const Invite = () => {
 
           <p className={styles.left}>Дархан</p>
           <p className={styles.text}>МЕН</p>
-          <p className={styles.right}>Марзия</p>
+          <p className={styles.right}>Марзияның</p>
 
           <p className={styles.text}>үйлену тойына<br />
             арналған салтанатты<br />

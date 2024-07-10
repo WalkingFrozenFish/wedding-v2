@@ -28,7 +28,7 @@ const Road = () => {
         },
         {
             textData: {
-                time: "19:00",
+                time: "18:00",
                 description: "ТОЙДЫҢ БАСТАЛУЫ"
             },
             imagePath: arch

@@ -8,6 +8,7 @@ import Road from "./components/Road/Road.tsx";
 import DressCode from "./components/Dresscode/DressCode.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 import Calendar from "./components/Calendar/Calendar.tsx";
+import Map from "./components/Map/Map.tsx";
 
 function App() {
     return (
@@ -25,6 +26,10 @@ function App() {
             <Divider/>
 
             <Timer/>
+
+                <Divider />
+
+                <Map />
 
             <Divider/>
 

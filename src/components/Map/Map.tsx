@@ -17,8 +17,6 @@ const Map = () => {
                 <div className={styles.bottomTextblock}>
                     <p className={styles.text}>cіздерге ыңғайлы болуы <br/>үшін төменде көрсетілген <br/>картаны <br/> пайдалануыңызды <br/> сұраймыз:</p>
                 </div>
-
-                <a href={"https://google.com"} className={styles.gisButton}>2GIS</a>
             </div>
         </Wrapper>
     );
