@@ -13,10 +13,6 @@ const Map = () => {
                     <p className={styles.place}>“Наурыз”</p>
                     <p className={styles.text}>мейрамханасы</p>
                 </div>
-
-                <div className={styles.bottomTextblock}>
-                    <p className={styles.text}>cіздерге ыңғайлы болуы <br/>үшін төменде көрсетілген <br/>картаны <br/> пайдалануыңызды <br/> сұраймыз:</p>
-                </div>
             </div>
         </Wrapper>
     );
